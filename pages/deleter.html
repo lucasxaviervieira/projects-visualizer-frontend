@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h-full flex flex-col justify-center items-center">
+      <h1>Delete a Task by -TASKID-</h1>
+      <form class="loginForm" id="deleter-form">
+        <div class="input-group">
+          <label for="taskId" class="label">Task Id:</label>
+          <input type="text" id="taskId" class="input" required />
+          <span class="error-message"></span>
+        </div>
+        <button class="button" type="submit">submit</button>
+      </form>
+    </div>
+    <script type="module" src="/js/pages/deleter/index.js"></script>
+    <script type="module" src="/js/pages/verify_route/index.js"></script>
+    <!-- <script src="/.lib/tailwindcss/index.js"></script> -->
+  </body>
+</html>

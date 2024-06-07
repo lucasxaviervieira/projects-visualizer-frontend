@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+    </style>
+    <script src="/.lib/jsencrypt/index.js"></script>
+  </head>
+  <body>
+    <div class="h-full flex flex-col gap-5 justify-center items-center">
+      <h2 class="text-center">Login</h2>
+      <br />
+      <form class="loginForm" id="login-form">
+        <div class="input-group">
+          <label for="username" class="label">Username</label>
+          <input type="text" id="username" class="input" required />
+          <span class="error-message"></span>
+        </div>
+        <br />
+        <div class="input-group">
+          <label for="password" class="label">Password</label>
+          <input type="password" id="password" class="input" required />
+          <span class="error-message"></span>
+        </div>
+        <br />
+        <button class="button" type="submit">Login</button>
+      </form>
+    </div>
+    <script type="module" src="/js/pages/login/index.js"></script>
+    <script type="module" src="/js/pages/verify_route/index.js"></script>
+    <!-- <script src="/.lib/tailwindcss/index.js"></script> -->
+  </body>
+</html>

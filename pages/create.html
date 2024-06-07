@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h-full flex flex-col justify-center items-center">
+      <h1>Create a Task</h1>
+      <form class="loginForm" id="creater-form">
+        <div class="input-group">
+          <label for="project_name" class="label">Nome do Projeto:</label>
+          <input type="text" id="project_name" class="input" required />
+          <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="task_name" class="label">Nome da Tarefa:</label>
+          <input type="text" id="task_name" class="input" required />
+          <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="init_date" class="label">Data Início:</label>
+          <input type="date" id="init_date" class="input" required />
+          <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="end_date" class="label">Data Final:</label>
+          <input type="date" id="end_date" class="input" required />
+          <span class="error-message"></span>
+        </div>
+        <div class="input-group">
+          <label for="progress" class="label">Progresso:</label>
+          <input
+            id="progress"
+            class="input"
+            value="1"
+            min="1"
+            max="10"
+            type="number"
+            required
+          />
+
+          <span class="error-message"></span>
+        </div>
+
+        <button class="button" type="submit">submit</button>
+      </form>
+    </div>
+    <script type="module" src="/js/pages/creater/index.js"></script>
+    <script type="module" src="/js/pages/verify_route/index.js"></script>
+    <!-- <script src="/.lib/tailwindcss/index.js"></script> -->
+  </body>
+</html>
