@@ -10,7 +10,8 @@ async function deleteTask(taskId) {
       if (response.ok) {
         return response.json();
       } else {
-        console.error('Error deleting task');
+        localStorage.removeItem('BearerToken');
+        window.location.href = ('login.html')
       }
     })
     .then(data => {

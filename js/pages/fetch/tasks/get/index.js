@@ -10,7 +10,8 @@ async function getAllTasks() {
       if (response.ok) {
         return response.json();
       } else {
-        console.error('Error fetching tasks');
+        localStorage.removeItem('BearerToken');
+        window.location.href = ('login.html')
       }
     })
     .then(data => {
