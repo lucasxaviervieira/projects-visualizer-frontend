@@ -1,4 +1,4 @@
-import { deleteTask } from "/js/pages/fetch/tasks/delete/index.js";
+import { deleteTask } from "/js/api/tasks/delete/index.js";
 
 const form = document.getElementById('deleter-form')
 form.addEventListener("submit", async function (event) {

@@ -1,4 +1,4 @@
-import { getAllTasks, getTask } from "/js/pages/fetch/tasks/get/index.js";
+import { getAllTasks, getTask } from "/js/api/tasks/get/index.js";
 
 async function showTask(data) {
   const dataElement = document.getElementById("task-to-show")
@@ -13,7 +13,6 @@ async function showAllTasks(data) {
     liElement.innerText = (element.nome_projeto)
     dataElement.appendChild(liElement)
   });
-
 }
 
 // Mostra todas as tarefas

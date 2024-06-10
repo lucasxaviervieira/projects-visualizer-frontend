@@ -1,4 +1,4 @@
-import { putTask } from "/js/pages/fetch/tasks/put/index.js";
+import { putTask } from "/js/api/tasks/put/index.js";
 
 const form = document.getElementById('updater-form')
 form.addEventListener("submit", async function (event) {

@@ -1,4 +1,4 @@
-import { createTask } from "/js/pages/fetch/tasks/post/index.js";
+import { createTask } from "/js/api/tasks/post/index.js";
 
 const form = document.getElementById('creater-form')
 form.addEventListener("submit", async function (event) {

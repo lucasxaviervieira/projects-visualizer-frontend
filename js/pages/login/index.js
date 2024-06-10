@@ -1,4 +1,4 @@
-import { authApi, encryptPass } from "/js/pages/fetch/auth/index.js";
+import { authApi, encryptPass } from "/js/api/auth/index.js";
 
 
 const form = document.getElementById("login-form")
