@@ -11,7 +11,8 @@
     </style>
   </head>
   <body>
-    <div class="h-full flex flex-col justify-center items-center">
+    <navbar-component></navbar-component>
+    <div class="h-[87%] flex flex-col justify-center items-center">
       <h1>Show Only a Task</h1>
       <form class="loginForm" id="taskId-form">
         <div class="input-group">
@@ -25,8 +26,12 @@
       <h1>Show All Tasks</h1>
       <ul id="tasks-to-show"></ul>
     </div>
-    <script type="module" src="/js/pages/viewer/index.js"></script>
     <script type="module" src="/js/pages/route_verifier/index.js"></script>
-    <!-- <script src="/.lib/tailwindcss/index.js"></script> -->
+
+    <script type="module" src="/js/pages/viewer/index.js"></script>
+
+    <script type="module" src="/js/components/navbar/index.js"></script>
+
+    <script src="/.lib/tailwindcss/index.js"></script>
   </body>
 </html>

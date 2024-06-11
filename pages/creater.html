@@ -11,7 +11,8 @@
     </style>
   </head>
   <body>
-    <div class="h-full flex flex-col justify-center items-center">
+    <navbar-component></navbar-component>
+    <div class="h-[87%] flex flex-col justify-center items-center">
       <h1>Create a Task</h1>
       <form class="loginForm" id="creater-form">
         <div class="input-group">
@@ -52,8 +53,12 @@
         <button class="button" type="submit">submit</button>
       </form>
     </div>
-    <script type="module" src="/js/pages/creater/index.js"></script>
     <script type="module" src="/js/pages/route_verifier/index.js"></script>
-    <!-- <script src="/.lib/tailwindcss/index.js"></script> -->
+
+    <script type="module" src="/js/pages/creater/index.js"></script>
+
+    <script type="module" src="/js/components/navbar/index.js"></script>
+
+    <script src="/.lib/tailwindcss/index.js"></script>
   </body>
 </html>
